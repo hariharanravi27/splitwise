@@ -1,4 +1,4 @@
-# Create an Expense Sharing Application
+# Create an Expense Sharing Application (Splitwise)
 
 ## Requirements
 
