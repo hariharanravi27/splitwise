@@ -35,8 +35,9 @@ public class UserController {
     @PutMapping("user/{userId}")
     public ResponseDTO<UserDTO> updateUser(@PathVariable Long userId, @RequestBody CreateUserDTO updateRequest) {
         UserDTO user = userService.updateUser(userId,updateRequest);
-        if(user == null)
+        if(user == null) {
             return ResponseDTO.notFound();
+        }
         return ResponseDTO.success(user);
 
     }
