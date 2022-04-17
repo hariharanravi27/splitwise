@@ -19,7 +19,7 @@ public class UserService {
     private UserRepository userRepository;
     public UserDTO createUser(CreateUserDTO userRequest) {
 
-        //Encode plaintextpassword
+        //Encode plaintext password
         String hashedPassword = passwordEncoder.encode(userRequest.getPassword());
 
         // Convert DTO to user
